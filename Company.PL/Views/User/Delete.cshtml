@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Delete User</h1>
+<br />
+<br />
+
+<form asp-action="Delete">
+
+    <partial name="PartialViews/DeleteDetailsPartial" />
+
+
+
+    <input type="submit" value="Delete" class="btn btn-primary" /> ||
+    <a asp-action="Index" class="btn btn-outline-success">Back To List</a>
+</form>
